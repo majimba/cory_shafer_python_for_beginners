@@ -45,6 +45,59 @@ name = "Majimba"
 message = f"{greeting}, {name.upper()}. Welcome!"  # Calls upper() method on name
 print(message)  # Output: Hello, MAJIMBA. Welcome!
 
+# Additional String Concatenation Methods:
+
+# Method 4: Using join() method
+# Efficient for joining multiple strings, especially from a list
+print("\nJoin Method Examples:")
+# Basic join with space
+words = ['Hello', 'World', 'from', 'Python']
+message = " ".join(words)
+print(message)  # Output: Hello World from Python
+
+# Join with different delimiter
+message = "-".join(words)
+print(message)  # Output: Hello-World-from-Python
+
+# Join with empty string (common for character lists)
+chars = ['H', 'e', 'l', 'l', 'o']
+message = "".join(chars)
+print(message)  # Output: Hello
+
+# Method 5: % operator (old style formatting)
+# Not recommended for modern Python, but you might see it in old code
+print("\n% Operator Examples:")
+name = "Majimba"
+age = 25
+# Basic string formatting
+message = "Hello, %s!" % name
+print(message)  # Output: Hello, Majimba!
+
+# Multiple values using tuple
+message = "Hello, %s! You are %d years old." % (name, age)
+print(message)  # Output: Hello, Majimba! You are 25 years old.
+
+# Method 6: Template strings
+# Useful for user-supplied strings or when you want to separate template from values
+print("\nTemplate String Examples:")
+from string import Template
+
+# Basic template
+template = Template("$greeting, $name!")
+message = template.substitute(greeting="Hello", name="Majimba")
+print(message)  # Output: Hello, Majimba!
+
+# Template with dictionary
+values = {'greeting': 'Hi', 'name': 'Majimba', 'message': 'Welcome'}
+template = Template("$greeting, $name! $message")
+message = template.substitute(values)
+print(message)  # Output: Hi, Majimba! Welcome
+
+# Safe substitution (doesn't raise KeyError for missing keys)
+template = Template("$greeting, $name!")
+message = template.safe_substitute(greeting="Hello")  # 'name' is missing
+print(message)  # Output: Hello, $name!
+
 # Introspection Tools
 # These help you explore string methods and functionality
 
@@ -52,6 +105,7 @@ print(message)  # Output: Hello, MAJIMBA. Welcome!
 greeting = "Hello"
 name = "Majimba"
 
+print("\nAvailable String Methods:")
 print(dir(name))  # Shows all available string methods
 
 # help() function: Provides detailed documentation
@@ -59,19 +113,10 @@ print(dir(name))  # Shows all available string methods
 print(help(str))          # Documentation for string class
 print(help(str.lower()))  # Documentation for lower() method
 
-# Additional String Concatenation Methods (Not shown in code):
-# 1. Using join() method:
-#    " ".join(['Hello', 'World'])  # Joins with space between
-#
-# 2. Using % operator (old style formatting):
-#    "%s, %s" % (greeting, name)  # Not recommended for modern Python
-#
-# 3. Template strings from string module:
-#    from string import Template
-#    Template("$greeting, $name").substitute(greeting=greeting, name=name)
-
 # Best Practices:
 # 1. Use f-strings for simple concatenation (Python 3.6+)
 # 2. Use join() for concatenating lists of strings
 # 3. Use .format() if you need compatibility with Python < 3.6
 # 4. Avoid + operator for multiple concatenations (inefficient)
+# 5. Use Template strings when dealing with user-supplied templates
+# 6. Avoid % operator unless maintaining legacy code
