@@ -81,7 +81,7 @@ Feel free to:
 
 ## License
 
-This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT). This permissive license allows you to:
+This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT) (opens in a new tab). This permissive license allows you to:
 - Use the code commercially
 - Modify the code
 - Distribute the code
