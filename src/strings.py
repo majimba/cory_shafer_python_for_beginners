@@ -19,7 +19,33 @@ print(message)
 # \" - Double quote
 # \n - Newline
 # \t - Tab
+# \\ - Backslash
+# \b - Backspace
+# \r - Carriage return
+# \f - Form feed
+
+# Example with single quote escape
 message = 'Bobby\'s World'    # Using \' to include apostrophe in single-quoted string
+print(message)
+
+# Example with double quote escape
+message = "He said \"Hello!\""    # Using \" to include quotes
+print(message)
+
+# Example with newline
+message = "Line 1\nLine 2\nLine 3"    # \n creates new lines
+print(message)
+
+# Example with tab
+message = "Name:\tJohn\tAge:\t25"    # \t adds tab spacing
+print(message)
+
+# Example with backslash
+path = "C:\\Users\\John\\Documents"    # \\ prints single backslash
+print(path)
+
+# Example combining multiple escape characters
+message = "First line\nSecond line\tTabbed\n\"Quoted text\""
 print(message)
 
 # Multi-line Strings
