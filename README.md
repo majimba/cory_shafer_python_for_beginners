@@ -1,54 +1,41 @@
-# Python String Manipulation Tutorial
+# Python Programming Beginner Tutorials
 
-A comprehensive guide to string manipulation in Python, based on Corey Schafer's Python programming tutorials. This repository contains well-documented examples and practical demonstrations of various string operations.
+This repository contains code examples and tutorials based on [Corey Schafer's Python Programming Beginner Tutorials](https://www.youtube.com/playlist?list=PL-osiE80TeTskrapNbzXhwoFUiLCjGgY7). Each module includes thoroughly documented code examples and practical demonstrations.
 
-## Contents
+## Tutorial Modules
 
-### 1. Basic String Operations (`strings/strings.py`)
-- String creation with single and double quotes
-- Escape characters and their usage
-- Multi-line strings
-- String length and basic operations
-- Detailed examples of escape sequences (\n, \t, \', \", etc.)
+### 1. Strings (`src/strings/`)
+Comprehensive coverage of string manipulation in Python. [View Details](src/strings/README.md)
+- Basic string operations
+- String methods and formatting
+- String slicing and indexing
+- String concatenation
+- Practical examples
 
-### 2. String Methods (`strings/string_methods.py`)
-- Case manipulation (upper, lower, title)
-- Whitespace removal (strip, lstrip, rstrip)
-- String searching and counting
-- String replacement
-- String property checks (startswith, endswith, etc.)
-
-### 3. String Slicing (`strings/string_slicing.py`)
-- Basic slicing syntax [start:end:step]
-- Positive and negative indexing
-- List slicing examples
-- Practical URL manipulation using slicing
-- Reversing strings and sequences
-
-### 4. String Concatenation (`strings/string_concatenation.py`)
-- Using + operator
-- str.format() method
-- f-strings (Python 3.6+)
-- join() method for efficient concatenation
-- Template strings
-- Old-style % formatting
-- Best practices for string concatenation
-
-### 5. Practical Examples (`strings/string_method_example.py`)
-- Real-world string manipulation scenarios
-- Common string operations in practice
-- Pattern matching and text processing
-- Text formatting and cleanup
+### Coming Soon
+- Numbers and Math Operations
+- Lists, Tuples, and Sets
+- Dictionaries
+- Conditionals and Booleans
+- Loops and Iterations
+- Functions
+- Modules and Importing
+- File Objects
+- Classes and Instances
+- Inheritance
+- Special Methods
 
 ## Project Structure
 ```
 src/
-├── strings/
-│   ├── strings.py              # Basic string operations
-│   ├── string_methods.py       # String manipulation methods
-│   ├── string_slicing.py       # String and list slicing
-│   ├── string_concatenation.py # String concatenation techniques
-│   └── string_method_example.py# Practical examples
+├── strings/                  # String manipulation tutorials
+│   ├── README.md            # Module-specific documentation
+│   ├── strings.py           # Basic string operations
+│   ├── string_methods.py    # String manipulation methods
+│   ├── string_slicing.py    # String and list slicing
+│   ├── string_concatenation.py  # String concatenation
+│   └── string_method_example.py # Practical examples
+└── ... (more modules coming)
 ```
 
 ## Getting Started
@@ -59,21 +46,22 @@ src/
    cd cory_shafer_python_for_beginners
    ```
 
-2. No additional dependencies are required - all examples use Python's built-in string functionality.
+2. No additional dependencies are required - all examples use Python's built-in functionality.
 
-3. Run any example file:
+3. Navigate to specific modules and run examples:
    ```bash
+   # For string examples
    python src/strings/strings.py
    python src/strings/string_methods.py
-   # etc.
    ```
 
 ## Key Features
 
-- **Comprehensive Documentation**: Each file contains detailed comments explaining concepts and usage
-- **Practical Examples**: Real-world scenarios demonstrating string manipulation
-- **Best Practices**: Guidelines for efficient and maintainable code
-- **Progressive Learning**: From basic to advanced string operations
+- **Comprehensive Documentation**: Each module and file contains detailed comments
+- **Practical Examples**: Real-world scenarios demonstrating Python concepts
+- **Best Practices**: Guidelines for writing efficient and maintainable code
+- **Progressive Learning**: From basic to advanced concepts
+- **Module-Specific READMEs**: Detailed documentation for each topic
 
 ## Python Version
 
@@ -81,8 +69,8 @@ These examples are compatible with Python 3.6+ (some features like f-strings req
 
 ## References
 
-- Based on [Corey Schafer's Python Tutorials](https://www.youtube.com/c/CoreySchafer)
-- Python String Documentation: https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
+- [Corey Schafer's Python Programming Beginner Tutorials](https://www.youtube.com/playlist?list=PL-osiE80TeTskrapNbzXhwoFUiLCjGgY7)
+- [Python Official Documentation](https://docs.python.org/3/)
 
 ## Contributing
 
