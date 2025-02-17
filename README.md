@@ -4,28 +4,28 @@ A comprehensive guide to string manipulation in Python, based on Corey Schafer's
 
 ## Contents
 
-### 1. Basic String Operations (`strings.py`)
+### 1. Basic String Operations (`strings/strings.py`)
 - String creation with single and double quotes
 - Escape characters and their usage
 - Multi-line strings
 - String length and basic operations
 - Detailed examples of escape sequences (\n, \t, \', \", etc.)
 
-### 2. String Methods (`string_methods.py`)
+### 2. String Methods (`strings/string_methods.py`)
 - Case manipulation (upper, lower, title)
 - Whitespace removal (strip, lstrip, rstrip)
 - String searching and counting
 - String replacement
 - String property checks (startswith, endswith, etc.)
 
-### 3. String Slicing (`string_slicing.py`)
+### 3. String Slicing (`strings/string_slicing.py`)
 - Basic slicing syntax [start:end:step]
 - Positive and negative indexing
 - List slicing examples
 - Practical URL manipulation using slicing
 - Reversing strings and sequences
 
-### 4. String Concatenation (`string_concatenation.py`)
+### 4. String Concatenation (`strings/string_concatenation.py`)
 - Using + operator
 - str.format() method
 - f-strings (Python 3.6+)
@@ -34,11 +34,22 @@ A comprehensive guide to string manipulation in Python, based on Corey Schafer's
 - Old-style % formatting
 - Best practices for string concatenation
 
-### 5. Practical Examples (`string_method_example.py`)
+### 5. Practical Examples (`strings/string_method_example.py`)
 - Real-world string manipulation scenarios
 - Common string operations in practice
 - Pattern matching and text processing
 - Text formatting and cleanup
+
+## Project Structure
+```
+src/
+├── strings/
+│   ├── strings.py              # Basic string operations
+│   ├── string_methods.py       # String manipulation methods
+│   ├── string_slicing.py       # String and list slicing
+│   ├── string_concatenation.py # String concatenation techniques
+│   └── string_method_example.py# Practical examples
+```
 
 ## Getting Started
 
@@ -52,8 +63,8 @@ A comprehensive guide to string manipulation in Python, based on Corey Schafer's
 
 3. Run any example file:
    ```bash
-   python src/strings.py
-   python src/string_methods.py
+   python src/strings/strings.py
+   python src/strings/string_methods.py
    # etc.
    ```
 
